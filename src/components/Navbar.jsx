@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="w-full px-6 py-3 flex justify-between items-center">
         {/* Left: Logo + Name */}
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Company Logo" width={50} height={50}className="object-contain" />
+          <img src={logo} alt="Company Logo" width={50} height={50} className="object-contain" />
           <h1 className="text-xl font-bold text-gray-800">SoAcLi</h1>
         </div>
 

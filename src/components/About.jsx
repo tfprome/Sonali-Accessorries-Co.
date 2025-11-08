@@ -9,7 +9,7 @@ const AboutSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
         className="absolute left-7 pt-6 pl-10 text-3xl font-bold text-gray-800">About</motion.div>
-        <section className="w-full px-6 py-16 bg-gray-50 flex justify-center">
+        <section className="w-full px-6 py-16 bg-gray-100 flex justify-center">
         <div className="w-full flex flex-col justify-between md:flex-row items-center gap-60">
           {/* Left: Animated About Title */}
           <motion.div
