@@ -4,22 +4,28 @@ import { motion, AnimatePresence,easeOut } from "framer-motion";
 import cert1 from "../assets/global-recycled-standard.png";
 import cert2 from "../assets/OEKO-TEX_Logo.png";
 import cert3 from "../assets/Intertek.png";
+import gclcert from '../assets/gcl cert.png';
+import oekocert from '../assets/oekocert.png';
+import intercert from '../assets/intertekcert.png'
 
 const certificates = [
   {
     image: cert1,
     title: "Global Recycled Standard",
     desc: "Certified for sustainable and recycled material standards.",
+    certificate: gclcert,
   },
   {
     image: cert2,
     title: "OEKO-TEX Standard",
     desc: "Certified for international export compliance and safety regulations.",
+    certificate:oekocert
   },
   {
     image: cert3,
     title: "Intertek Certification",
     desc: "Certified for safety and garment accessory manufacturing standards.",
+    certificate:intercert
   },
 ];
 
@@ -59,7 +65,7 @@ const Certificates = () => {
 
       <div className="flex flex-wrap gap-8 justify-center">
         {certificates.map((cert, i) => (
-          <Card key={i} cert={cert} onClick={() => setSelectedImage(cert.image)} />
+          <Card key={i} cert={cert} onClick={() => setSelectedImage(cert.certificate)} />
         ))}
       </div>
 
@@ -67,7 +73,7 @@ const Certificates = () => {
       <AnimatePresence>
         {selectedImage && (
           <motion.div
-            className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+            className="fixed inset-0 backdrop-blur-md bg-black/40 flex items-center justify-center z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

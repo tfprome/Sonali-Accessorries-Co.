@@ -1,5 +1,5 @@
 import React from "react";
-import { easeInOut, easeOut, motion } from "framer-motion";
+import {  easeOut, motion } from "framer-motion";
 
 import polybag from "../assets/Polybags.png";
 //import pricetag from "../assets/";
@@ -38,9 +38,9 @@ const Products = () => {
         {products.map((product, index) => (
           <motion.div
             key={index}
-            initial={{ x: 0, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease:"linear" }}
+            initial={{ scale:0.8, opacity: 0 }}
+            whileInView={{ scale:1, opacity: 1 }}
+            transition={{ type:"tween", duration: 1.5, ease:"linear" }}
             viewport={{ once: true }}
             className="w-72 h-80 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-all duration-300"
           >

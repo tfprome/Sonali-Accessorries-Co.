@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li className="hover:text-green-700 transition">
-            <a href="/about">About Us</a>
+            <a href="/moto">Our Moto</a>
           </li>
 
           {/* Products & Solutions Dropdown */}
@@ -33,7 +33,7 @@ const Navbar = () => {
             className="relative cursor-pointer"
             onClick={() => setOpenDropdown(!openDropdown)}
           >
-            <span className="hover:text-green-700 transition">Products & Solutions ▾</span>
+            <span className="hover:text-green-700 transition">Products▾</span>
 
             {openDropdown && (
               <motion.div 
