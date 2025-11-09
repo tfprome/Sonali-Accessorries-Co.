@@ -45,7 +45,7 @@ const Navbar = () => {
                   {products.map((item, idx) => (
                     <a
                       key={idx}
-                      href={`/products/${item.replace(/\s+/g, '-').toLowerCase()}`}
+                      href={`/${item.replace(/\s+/g, '-').toLowerCase()}`}
                       className="block px-2 py-1 hover:bg-green-200 hover:text-green-700 rounded transition text-sm"
                     >
                       {item}

@@ -12,20 +12,21 @@ import labels from "../assets/NylonLabel.jpg";
 import silica from "../assets/silica.jpg";
 //import eyelet from "../assets/eyelet.jpg";
 import backboard from "../assets/back_board.png";
+import { Link } from "react-router-dom";
 //import gumtape from "../assets/gumtape.jpg";
 
 const products = [
-  { name: "Poly Bags", desc: "Durable packaging materials for garments and accessories.", image: polybag },
+  { name: "Poly Bags", desc: "Durable packaging materials for garments and accessories.", image: polybag, link:'/polybags' },
 //   { name: "Price Tag & Hand Tags", desc: "Custom-designed tags to enhance your brand presentation.", image: pricetag },
-  { name: "Barcode & Stickers", desc: "High-quality printed barcodes and adhesive labels.", image: barcode },
-  { name: "Elastics", desc: "Premium stretch materials for various garment applications.", image: elastic },
-  { name: "Drawcord & Drawstrings", desc: "Soft and durable cords available in multiple colors.", image: drawcord },
-  { name: "Twill Tape", desc: "Strong cotton twill tape for label reinforcement and seams.", image: twill },
-  { name: "All Kinds of Printed Labels", desc: "Fabric and satin printed labels for professional branding.", image: labels },
+  { name: "Barcode & Stickers", desc: "High-quality printed barcodes and adhesive labels.", image: barcode, link:'/barcode' },
+  { name: "Elastics", desc: "Premium stretch materials for various garment applications.", image: elastic, link:'/elastic' },
+  { name: "Drawcord & Drawstrings", desc: "Soft and durable cords available in multiple colors.", image: drawcord, link:'/drawcode' },
+  { name: "Twill Tape", desc: "Strong cotton twill tape for label reinforcement and seams.", image: twill, link:'/twill' },
+  { name: "All Kinds of Printed Labels", desc: "Fabric and satin printed labels for professional branding.", image: labels,link:'/labels' },
 //   { name: "Sewing Thread", desc: "High-strength threads for smooth and durable stitching.", image: thread },
-  { name: "Silica Gel", desc: "Moisture absorbers to protect product freshness.", image: silica },
+  { name: "Silica Gel", desc: "Moisture absorbers to protect product freshness.", image: silica, link:'/silica' },
 //   { name: "Eyelet", desc: "Metal and plastic eyelets for garments and accessories.", image: eyelet },
-  { name: "Neck Board & Back Board", desc: "Premium boards for garment packaging support.", image: backboard },
+  { name: "Neck Board & Back Board", desc: "Premium boards for garment packaging support.", image: backboard,link:'/backboard' },
 //   { name: "Gum Tape", desc: "Strong adhesive tape for packaging and sealing.", image: gumtape },
 ];
 
@@ -36,7 +37,8 @@ const Products = () => {
 
       <div className="flex flex-wrap justify-center gap-8 px-6">
         {products.map((product, index) => (
-          <motion.div
+          <Link to={product.link}>
+              <motion.div
             key={index}
             initial={{ scale:0.8, opacity: 0 }}
             whileInView={{ scale:1, opacity: 1 }}
@@ -59,6 +61,7 @@ const Products = () => {
               <p className="text-sm text-gray-600 mt-2">{product.desc}</p>
             </div>
           </motion.div>
+          </Link>
         ))}
       </div>
     </section>
