@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Polybag from '../assets/montrimspoly.png';
 import Navbar from '../components/Navbar';
+import polymachine from '../assets/polymachine.png'
 
 const Polybags = () => {
   return (
@@ -61,6 +62,43 @@ const Polybags = () => {
           Our polybag production unit is outfitted with cutting-edge, high-speed machinery designed for LDPE, LLDPE, and PP materials, coupled with precision Flexographic printing systems and fully automated bag-making machines sourced from Taiwan. These advanced technologies enable us to maintain impeccable standards in both production efficiency and product quality. Each polybag undergoes strict measurement checks and rigorous quality control processes, ensuring that every item meets exact specifications. From durability and dimensional accuracy to vibrant, high-resolution printing, we guarantee that our polybags uphold the highest standards of excellence, reliability, and aesthetic appeal, making them the perfect choice for the modern garments and accessories industry.
         </motion.p>
       </motion.div>
+
+      <div className='flex justify-between items-start bg-gray-100 p-10 gap-8'>
+  {/* Left text section */}
+  <motion.div
+    className='w-2/5 flex flex-col gap-4 font-serif'
+    initial={{ opacity: 0, x: -50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+  >
+    <h1 className='text-3xl font-bold border-b pb-2'>Our Products include</h1>
+    <p className='border-b font-semibold'>1. Blister poly bag</p>
+    <p className='border-b font-semibold'>2. Individual single poly bag</p>
+    <p className='border-b font-semibold'>3. Adhesive poly bag</p>
+    <p className='border-b font-semibold'>4. Hanger poly bag</p>
+    <p className='border-b font-semibold'>5. Poly bag with flap and gusset</p>
+    <p className='border-b font-semibold'>6. Printed poly bag</p>
+    <p className='border-b font-semibold'>7. LDPE, LLDPE & PP poly bag</p>
+  </motion.div>
+
+  {/* Right image section */}
+  <div className='relative w-1/3 overflow-hidden rounded-lg'>
+    {/* Image with zoom effect on hover */}
+    <motion.img
+      src={polymachine}
+      alt='polymachine'
+      className='w-full h-auto rounded-lg'
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+    />
+    {/* Text overlay on image */}
+    <h2 className='absolute inset-0 flex items-end justify-end text-black md:text-3xl font-bold pointer-events-none drop-shadow-lg'>
+      Our Machines
+    </h2>
+  </div>
+</div>
+
     </div>
   );
 };

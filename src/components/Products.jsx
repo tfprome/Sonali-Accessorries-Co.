@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 //import gumtape from "../assets/gumtape.jpg";
 
 const products = [
-  { name: "Poly Bags", desc: "Durable packaging materials for garments and accessories.", image: polybag, link:'/polybags' },
+  { name: "Poly Bags", desc: "Durable packaging materials for garments and accessories.", image: polybag, link:'/poly-bag' },
 //   { name: "Price Tag & Hand Tags", desc: "Custom-designed tags to enhance your brand presentation.", image: pricetag },
   { name: "Barcode & Stickers", desc: "High-quality printed barcodes and adhesive labels.", image: barcode, link:'/barcode' },
   { name: "Elastics", desc: "Premium stretch materials for various garment applications.", image: elastic, link:'/elastic' },

@@ -11,7 +11,7 @@ function App() {
           <Routes>
              <Route path='/' element={<Home/>}></Route>
              <Route path='/moto' element={<Moto/>}></Route>
-             <Route path='/polybags' element={<Polybags/>}></Route>
+             <Route path='/poly-bag' element={<Polybags/>}></Route>
           </Routes>
        </BrowserRouter>
     </>
