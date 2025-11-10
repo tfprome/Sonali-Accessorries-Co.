@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const products = ["Poly Bag","Hang Tag","Back Board","Neck Board","Price Tag","Photo Inlay","Collar Stand", "Collar Bone",
     "Barcode Sticker","Carton Sticker","Poly Sticker","All Kinds of Print","Size Label","Sewing Thread","Drawstring","Drawcord",
-    "Twill Tape","All Kinds of Elastic","Gum Tape","P.P. Belt","Tag Pin","Eyelet","Revit","Paper Lini"
+    "Twill Tape","Elastic","Gum Tape","P.P. Belt","Tag Pin","Eyelet","Revit","Paper Lini"
   ];
 
   return (

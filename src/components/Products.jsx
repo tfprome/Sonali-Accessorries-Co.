@@ -42,7 +42,7 @@ const Products = () => {
             key={index}
             initial={{ scale:0.8, opacity: 0 }}
             whileInView={{ scale:1, opacity: 1 }}
-            transition={{ type:"tween", duration: 1.5, ease:"linear" }}
+            transition={{ type:"linear", duration: 1.5  }}
             viewport={{ once: true }}
             className="w-72 h-80 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-all duration-300"
           >
