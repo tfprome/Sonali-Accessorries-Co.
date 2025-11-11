@@ -3,6 +3,7 @@ import {Routes,Route,BrowserRouter} from 'react-router-dom'
 import Home from './pages/Home'
 import Moto from './pages/moto'
 import Polybags from './pages/polybags'
+import Elastic from './pages/elastic'
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
              <Route path='/' element={<Home/>}></Route>
              <Route path='/moto' element={<Moto/>}></Route>
              <Route path='/poly-bag' element={<Polybags/>}></Route>
+             <Route path='/elastic' element={<Elastic/>}></Route>
           </Routes>
        </BrowserRouter>
     </>
