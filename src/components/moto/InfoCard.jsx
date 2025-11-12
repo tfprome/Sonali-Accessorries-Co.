@@ -7,19 +7,19 @@ export const strengthCards = [
     title: "Heritage & Legacy",
     brief: "25+ years of delivering quality accessories.",
     detail:
-      "M/S Sonali Accessories Co. is a 100% export‑oriented garments accessories manufacturer and M/S S.K. Printers is a sister concern… Since 1996 both businesses are manufacturing quality garments accessories. Our printing project is in Motijheel, Dhaka; factory in Signboard, Narayanganj.",
+      "M/S Sonali Accessories Co. is a 100% export-oriented garments accessories manufacturer and M/S S.K. Printers is a sister concern… Since 1996 both businesses are manufacturing quality garments accessories. Our printing project is in Motijheel, Dhaka; factory in Signboard, Narayanganj.",
   },
   {
-    title: "State‑of‑the‑Art Facilities",
+    title: "State-of-the-Art Facilities",
     brief: "Modern factories & printing units.",
     detail:
-      "Our facilities are well‑established on our own land and well equipped with many types of machinery. Staff and technicians are skilled and well trained to support the garments & export industry.",
+      "Our facilities are well-established on our own land and well equipped with many types of machinery. Staff and technicians are skilled and well trained to support the garments & export industry.",
   },
   {
     title: "Mission & Goal",
-    brief: "Customer satisfaction through export‑quality accessories.",
+    brief: "Customer satisfaction through export-quality accessories.",
     detail:
-      "Our goal is to provide backward linkage support to the garments industry by manufacturing and supplying high‑quality accessories items. We seek to attain customer satisfaction by manufacturing and providing export quality accessories while maintaining proper delivery schedule.",
+      "Our goal is to provide backward linkage support to the garments industry by manufacturing and supplying high-quality accessories items. We seek to attain customer satisfaction by manufacturing and providing export quality accessories while maintaining proper delivery schedule.",
   },
   {
     title: "Vision for Excellence",
@@ -28,16 +28,16 @@ export const strengthCards = [
       "To lead the global garment accessories and packaging industry by consistently setting new standards of excellence. We envision a future where our innovative solutions empower fashion brands to create sustainable products.",
   },
   {
-    title: "Customer‑Centric Approach",
-    brief: "Strong long‑term partnerships & service.",
+    title: "Customer-Centric Approach",
+    brief: "Strong long-term partnerships & service.",
     detail:
-      "Foster strong, long‑term partnerships with our clients by offering personalized solutions, excellent customer service, and timely delivery, ensuring their success and satisfaction.",
+      "Foster strong, long-term partnerships with our clients by offering personalized solutions, excellent customer service, and timely delivery, ensuring their success and satisfaction.",
   },
   {
     title: "Sustainability & Community",
-    brief: "Eco‑friendly practices and community engagement.",
+    brief: "Eco-friendly practices and community engagement.",
     detail:
-      "Lead the industry in sustainable practices by sourcing eco‑friendly materials, reducing waste, and promoting responsible production and consumption. Create a supportive workplace and contribute to local communities through social and educational initiatives.",
+      "Lead the industry in sustainable practices by sourcing eco-friendly materials, reducing waste, and promoting responsible production and consumption. Create a supportive workplace and contribute to local communities through social and educational initiatives.",
   },
 ];
 
@@ -70,24 +70,22 @@ const InfoCard = ({ card, index }) => (
 
 // Strength Section
 const StrengthSection = () => (
-    <section className="w-full py-16 flex bg-gray-100">
-      {/* Left: Header */}
-      <div className="w-2/5 flex flex-col font-serif font-semibold gap-2 pl-12 mt-12">
-        <h2 className="text-5xl">
-          <span className="text-green-300">Essence</span> of
-        </h2>
-        <h2 className="text-5xl text-gray-900">our Strength</h2>
-      </div>
-  
-      {/* Right: Cards */}
-      <div className="w-4/5 flex flex-wrap justify-center gap-8 px-6">
-        {strengthCards.map((card, idx) => (
-          <InfoCard key={idx} card={card} index={idx} />
-        ))}
-      </div>
-    </section>
-  );
-  
+  <section className="w-full py-16 flex bg-gray-100 flex-col lg:flex-row items-center lg:items-start">
+    {/* Left: Header */}
+    <div className="w-full lg:w-2/5 flex flex-col font-serif font-semibold gap-2 px-6 lg:pl-12 mt-6 lg:mt-12 text-center lg:text-left">
+      <h2 className="text-4xl sm:text-5xl">
+        <span className="text-green-300">Essence</span> of
+      </h2>
+      <h2 className="text-4xl sm:text-5xl text-gray-900">our Strength</h2>
+    </div>
 
+    {/* Right: Cards */}
+    <div className="w-full lg:w-4/5 flex flex-wrap justify-center gap-6 sm:gap-8 px-6 mt-10 lg:mt-0">
+      {strengthCards.map((card, idx) => (
+        <InfoCard key={idx} card={card} index={idx} />
+      ))}
+    </div>
+  </section>
+);
 
 export default StrengthSection;
