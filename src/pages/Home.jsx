@@ -5,6 +5,7 @@ import Buyers from './../components/buyers';
 import Certificates from '../components/certificate';
 import Products from './../components/Products';
 import InfoBar from '../components/info';
+import Slider from '../components/slider';
 
 
 export default function Home(){
@@ -12,6 +13,7 @@ export default function Home(){
         <>
            <InfoBar/>
            <Navbar/>
+           <Slider/>
            <About/>
            <Buyers/>
            <Certificates/>

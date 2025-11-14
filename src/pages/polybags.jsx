@@ -12,6 +12,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const Polybags = () => {
   const images=[polymachine,polymachine1,polymachine2,polymachine3]
   const visibleCount = 3;
+  const extendedimages=[ ...images, ...images.slice(0,visibleCount)]
+  
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -162,14 +164,14 @@ const Polybags = () => {
           Our Machineries
         </h1>
 
-        <div className="relative mx-auto w-full max-w-5xl overflow-hidden">
+        <div className="relative mx-auto w-full max-w-7xl overflow-hidden">
           {/* Slider container */}
           <motion.div
             className="flex w-full"
             animate={{ x: `-${currentIndex * (100 / visibleCount)}%` }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
           >
-            {images.map((img, index) => (
+            {extendedimages.map((img, index) => (
               <div
                 key={index}
                 className="flex-shrink-0 w-1/3 p-3"
