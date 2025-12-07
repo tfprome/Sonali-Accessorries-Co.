@@ -65,7 +65,7 @@ const Content = (props) => {
       <motion.div
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 200 }}
-        className="bg-gradient-to-r from-green-600 to-emerald-400 text-white px-10 py-8 rounded-2xl shadow-xl text-center w-full md:w-80"
+        className="bg-linear-to-r from-green-600 to-emerald-400 text-white px-10 py-8 rounded-2xl shadow-xl text-center w-full md:w-80"
       >
         <motion.h2
           className="text-5xl font-extrabold tracking-wide"
@@ -85,7 +85,7 @@ const Content = (props) => {
       <motion.div
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 200 }}
-        className="bg-gradient-to-r from-emerald-400 to-green-600 text-white px-10 py-8 rounded-2xl shadow-xl text-center w-full md:w-80"
+        className="bg-linear-to-r from-emerald-400 to-green-600 text-white px-10 py-8 rounded-2xl shadow-xl text-center w-full md:w-80"
       >
         <motion.h2
           className="text-5xl font-extrabold tracking-wide"

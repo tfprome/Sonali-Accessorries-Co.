@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <div className="relative pt-20">
+    <div className="relative">
         <motion.div 
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}

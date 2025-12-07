@@ -20,7 +20,7 @@ const products = [
 //   { name: "Price Tag & Hand Tags", desc: "Custom-designed tags to enhance your brand presentation.", image: pricetag },
   { name: "Barcode & Stickers", desc: "High-quality printed barcodes and adhesive labels.", image: barcode, link:'/barcode' },
   { name: "Elastics", desc: "Premium stretch materials for various garment applications.", image: elastic, link:'/elastic' },
-  { name: "Drawcord & Drawstrings", desc: "Soft and durable cords available in multiple colors.", image: drawcord, link:'/drawcode' },
+  { name: "Drawcord & Drawstrings", desc: "Soft and durable cords available in multiple colors.", image: drawcord, link:'/drawcord' },
   { name: "Twill Tape", desc: "Strong cotton twill tape for label reinforcement and seams.", image: twill, link:'/twill' },
   { name: "All Kinds of Printed Labels", desc: "Fabric and satin printed labels for professional branding.", image: labels,link:'/labels' },
 //   { name: "Sewing Thread", desc: "High-strength threads for smooth and durable stitching.", image: thread },
